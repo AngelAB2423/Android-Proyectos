@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://android.com"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCamarero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_camarero"
+        android:completionThreshold="3"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/totalCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_cuenta"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/propina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_propina"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/porcentaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="0"
+        android:enabled="false"
+        android:padding="16dp"
+        android:progress="10" />
+
+    <RadioGroup
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/efectivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/pago_efectivo"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pago_tarjeta"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_calcular"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+</LinearLayout>

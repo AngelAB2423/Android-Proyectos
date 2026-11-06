@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestionCuentaBar</string>
+    <string name="txt_propina">Propina</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="hint_cuenta">Total de la Cuenta</string>
+    <string name="pago_efectivo">Efectivo</string>
+    <string name="pago_tarjeta">Tarjeta</string>
+    <string name="hint_camarero">Nombre del camarero</string>
+</resources>

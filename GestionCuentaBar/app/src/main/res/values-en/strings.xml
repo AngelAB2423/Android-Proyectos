@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bar Bill Management</string>
+    <string name="txt_propina">Tip</string>
+    <string name="btn_calcular">Calculate</string>
+    <string name="hint_cuenta">Total Bill</string>
+    <string name="pago_efectivo">Cash</string>
+    <string name="pago_tarjeta">Credit Card</string>
+    <string name="hint_camarero">Waiter name</string>
+</resources>
